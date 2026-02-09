@@ -1,0 +1,56 @@
+[
+  {
+    "site_id": "SITE-001",
+    "reliability": {
+      "end_to_end": 0.9963,
+      "status": "high"
+    },
+    "evaluation": {
+      "retrieval_accuracy": 1.0,
+      "reasoning_consistency": 1.0,
+      "tool_correctness": 1.0,
+      "ece": 0.0372
+    },
+    "governance": {
+      "alerts": [],
+      "safe_to_publish": true
+    }
+  },
+  {
+    "site_id": "SITE-002",
+    "reliability": {
+      "end_to_end": 0.9912,
+      "status": "high"
+    },
+    "evaluation": {
+      "retrieval_accuracy": 1.0,
+      "reasoning_consistency": 1.0,
+      "tool_correctness": 1.0,
+      "ece": 0.0882
+    },
+    "governance": {
+      "alerts": [
+        "PM2.5 exceeds governance threshold",
+        "pH outside safe governance range"
+      ],
+      "safe_to_publish": false
+    }
+  },
+  {
+    "site_id": "SITE-003",
+    "reliability": {
+      "end_to_end": 0.9977,
+      "status": "high"
+    },
+    "evaluation": {
+      "retrieval_accuracy": 1.0,
+      "reasoning_consistency": 1.0,
+      "tool_correctness": 1.0,
+      "ece": 0.0228
+    },
+    "governance": {
+      "alerts": [],
+      "safe_to_publish": true
+    }
+  }
+]
