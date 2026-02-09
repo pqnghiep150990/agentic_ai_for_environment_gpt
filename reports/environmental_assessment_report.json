@@ -1,0 +1,45 @@
+{
+  "site_id": "SITE-001",
+  "summary": {
+    "air_quality_score": 44.2,
+    "water_status": "normal",
+    "explanation": "Combined particulate and NO2 loading with pH threshold checks."
+  },
+  "ingestion": {
+    "source_field_count": 5,
+    "required_sensor_count": 5,
+    "conversion_notes": [
+      "pm25: No unit conversion",
+      "pm10: No unit conversion",
+      "no2: No unit conversion",
+      "ph: No unit conversion",
+      "temperature_c: No unit conversion"
+    ],
+    "warnings": [],
+    "quality_score": 1.0,
+    "status": "pass"
+  },
+  "tool_outputs": {
+    "mean_sensor_value": 31.1,
+    "max_sensor_value": 62.0
+  },
+  "evaluation": {
+    "retrieval_accuracy": 1.0,
+    "reasoning_consistency": 1.0,
+    "tool_correctness": 1.0,
+    "ece": 0.0558
+  },
+  "reliability": {
+    "end_to_end": 0.9944,
+    "status": "high"
+  },
+  "governance": {
+    "alerts": [],
+    "safe_to_publish": true
+  },
+  "retrieval_evidence": [
+    "WHO PM2.5 guideline: annual mean under 5 \u00b5g/m3 where feasible.",
+    "WHO NO2 guideline: annual average under 10 \u00b5g/m3.",
+    "Surface water pH is typically acceptable in range 6.5-8.5."
+  ]
+}
